@@ -1,5 +1,7 @@
 #include "kalman_filter.h"
 
+using namespace Eigen;
+
 KalmanFilter::KalmanFilter() {}
 
 KalmanFilter::~KalmanFilter() {}

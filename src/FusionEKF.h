@@ -8,6 +8,8 @@
 #include "kalman_filter.h"
 #include "tools.h"
 
+using namespace Eigen;
+
 class FusionEKF {
 public:
   /**

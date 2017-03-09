@@ -1,6 +1,9 @@
 #include <iostream>
 #include "tools.h"
 
+using namespace Eigen;
+using namespace std;
+
 Tools::Tools() {}
 
 Tools::~Tools() {}
