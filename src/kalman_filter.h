@@ -1,5 +1,6 @@
 #ifndef KALMAN_FILTER_H_
 #define KALMAN_FILTER_H_
+#include <iostream>
 #include "Eigen/Dense"
 
 class KalmanFilter {
@@ -63,6 +64,12 @@ public:
    * @param z The measurement at k+1
    */
   void UpdateEKF(const Eigen::VectorXd &z);
+
+  /**
+   * Core calculation of Kalman Filter which is common to KF and EKF
+   * @param y The difference between the predicted measurement and actual measurement
+  */
+  void UpdateCore(const Eigen::VectorXd &y);
 
 };
 

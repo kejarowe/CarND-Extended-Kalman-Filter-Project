@@ -47,7 +47,7 @@ MatrixXd Tools::CalculateJacobian(const VectorXd& x_state) {
 
 	//check division by zero
 	if ((px == 0) && (py == 0))
-	    return Hj;
+	    return Hj.setZero(3,4);
 
 	//compute the Jacobian matrix
     float mag = px*px+py*py;
